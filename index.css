@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+
+body{
+    font-family: 'Outfit', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 544px;
+    background-color:hsl(214.29deg 50% 16.47%);
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.img{
+    position: relative;
+}
+
+.hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%,0.55);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+    transition: opacity .2s ease;
+}
+.hover:hover{
+    display: flex;
+    opacity: 1;
+}
+
+.hover img{
+    width: 40px;
+    opacity: none;
+}
+
+
+.img img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+a{
+    transition: color .2s ease;
+}
+
+.content a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 3;
+    font-size: 24px;
+    
+}
+
+.content p{
+    line-height: 1.7;
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+}
+
+.price-date{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.price , .date{
+    display: flex;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+}
+
+.price p, .date p{
+    margin-left: 7px;
+
+}
+
+.price p{
+    color: hsl(178, 100%, 50%);
+}
+
+.line{
+    display: block;
+    background-color: hsl(215, 32%, 27%);
+    min-height: 1.5px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.creator{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 20px;
+}
+
+
+
+.circle img{
+    width: 30px;
+    
+}
+
+.creator a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.content a:hover,.creator a:hover{
+    color: hsl(178, 100%, 50%);
+} 

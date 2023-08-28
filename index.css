@@ -51,13 +51,13 @@ body{
     transition: opacity .2s ease;
 }
 .hover:hover{
-    display: flex;
+    
     opacity: 1;
 }
 
-.hover img{
+.image .hover img{
     width: 40px;
-    opacity: none;
+    
 }
 
 
